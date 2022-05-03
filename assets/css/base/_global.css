@@ -5,6 +5,10 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.background-fixed{
     background: url(../../imgs/background.png) no-repeat;
     background-size: cover;
     position: fixed;
