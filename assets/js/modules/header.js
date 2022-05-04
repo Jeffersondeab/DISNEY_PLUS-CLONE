@@ -2,15 +2,19 @@ const header = document.querySelector('[data-header]')
 
 
 
-function ver(){
-    let oi = window.document.getElementById('oi')
-    
-    oi.style.background = 'red'
-}
+let teste = window.document.getElementById('teste')
 
-function init(){
-    ver()
+ 
+    if (window.scrollY > 20){
+        teste.style.background = 'red'
+}   else{
+        teste.style.background = 'transparent'
 }
+ 
+
+
+
+
 
 
 
