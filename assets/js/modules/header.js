@@ -2,6 +2,18 @@ const header = document.querySelector('[data-header]')
 
 
 
+function ver(){
+    let oi = window.document.getElementById('oi')
+    
+    oi.style.background = 'red'
+}
+
+function init(){
+    ver()
+}
+
+
+
 function setListeners(){
     window.addEventListener('scroll', function(){
             if(window.scrollY > 20){
