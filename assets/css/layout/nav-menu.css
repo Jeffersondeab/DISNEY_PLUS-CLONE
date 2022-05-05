@@ -51,7 +51,7 @@
 
 .nav-submenu__link:hover .nav-submenu__text::before,
 .nav-menu__link:hover .nav-menu__text::before{
-    width: 100%;
+    width: 100%; 
 }
 
 .nav-menu__item.dropdown{

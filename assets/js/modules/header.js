@@ -1,5 +1,5 @@
 const header = document.querySelector('[data-header]')
-const openNavmenu = document.querySelector('[data-open-navsubmenu]')
+const openNavSubmenu = document.querySelector('[data-open-navsubmenu]')
 const navSubmenu = document.querySelector('[data-navsubmenu]')
 const openUserMenu = document.querySelector('[data-open-usermenu]')
 const userMenu = document.querySelector('[data-usermenu]')
@@ -20,7 +20,7 @@ function onTouchOpenNavSubmenu(event){
 function onTouchOpenUserMenu(event){
     event.preventDefaut()
      userMenu.classList.toggle('active')
-}
+} 
 
 
 function setListeners(){
