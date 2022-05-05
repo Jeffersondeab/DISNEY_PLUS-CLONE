@@ -1,14 +1,32 @@
 const header = document.querySelector('[data-header]')
+const openNavmenu = document.querySelector('[data-open-navsubmenu]')
+const navSubmenu = document.querySelector('[data-navsubmenu]')
+const openUserMenu = document.querySelector('[data-open-usermenu]')
+const userMenu = document.querySelector('[data-usermenu]')
 
+function onWindowScroll(){
+    if(window.scrollY > 20){
+        header.style.backgroundColor  = '#0C0D14'   /*  #0C0D14 */
+    }else{
+        header.style.backgroundColor = 'transparent'
+    }
+}
  
+function onTouchOpenNavSubmenu(event){
+    event.preventDefaut()
+    navSubmenu.classList.toggle('active')
+}
+
+function onTouchOpenUserMenu(event){
+    event.preventDefaut()
+     userMenu.classList.toggle('active')
+}
+
+
 function setListeners(){
-    window.addEventListener('scroll', function(){
-            if(window.scrollY > 20){
-                header.style.backgroundColor  = '#0C0D14'   /*  #0C0D14 */
-            }else{
-                header.style.backgroundColor = 'transparent'
-        }
-    })
+    window.addEventListener('scroll', onWindowScroll)
+    openNavSubmenu.addEventListener('touchstart', onTouchOpenNavSubmenu)
+    openUserMenu.addEventListener('touchstart',  onTouchOpenUserMenu)
 }
 
 
