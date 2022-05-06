@@ -13,12 +13,12 @@ function onWindowScroll(){
 }
  
 function onTouchOpenNavSubmenu(event){
-    event.preventDefaut()
+    event.preventDefault()
     navSubmenu.classList.toggle('active')
 }
 
 function onTouchOpenUserMenu(event){
-    event.preventDefaut()
+    event.preventDefault()
      userMenu.classList.toggle('active')
 } 
 
