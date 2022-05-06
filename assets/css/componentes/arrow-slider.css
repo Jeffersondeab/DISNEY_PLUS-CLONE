@@ -1,0 +1,16 @@
+.arrow-slider{
+    background: none;
+    color: white;
+    font-family: 'Font Awesome 6 Free';
+    font-size: 4rem;
+
+}
+
+.arrow-slider--left::before{
+    content: '';
+
+}
+
+.arrow-slider--right::before{
+    content: '';
+}
