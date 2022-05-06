@@ -1,13 +1,14 @@
 .arrow-slider{
     background: none;
     color: white;
+    cursor: pointer;
     font-family: 'Font Awesome 6 Free';
-    font-size: 4rem;
+    font-size: 3rem;
 
 }
 
 .arrow-slider--left::before{
-    content: '';
+    content: '';   /* ❭ ❬*/
 
 }
 
