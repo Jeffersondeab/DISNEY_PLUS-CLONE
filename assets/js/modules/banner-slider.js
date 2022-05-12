@@ -1,10 +1,10 @@
 const sliderItems = document.querySelectorAll('[data-banner="item"]')
 const slider = document.querySelector('[data-banner="slider"]')
 const state = {
-    mouseDownPosition: 0
+    mouseDownPosition: 0,
     lastTranslatePosition:0,
     movementPosition:0,
-    currentSliderPosition:0
+    currentSliderPosition:0,
     currentSlideIndex:0
 }
 
