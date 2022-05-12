@@ -114,9 +114,13 @@ function setListeners(){
 
 
 function init() {
+    setVisibleSlide(2)
     setListeners()
 }
 
 export default{
     init
 }
+
+
+/* 1.28.30 */
