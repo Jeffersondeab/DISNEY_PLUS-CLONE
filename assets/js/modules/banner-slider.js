@@ -22,6 +22,23 @@ function getCenterPosition(index){
 }
 
 
+function forwardSlide(){
+    if(state.currentSlideIndex < sliderItems.length - 1){
+        const position = getCenterPosition (state.currentSlideIndex + 1)
+        translateSlide(position)
+    }else{
+        const position = getCenterPosition (state.currentSlideIndex)
+        translateSlide(position)
+    }
+   
+}
+
+function backwardSlide(){
+    const position = getCenterPosition (state.currentSlideIndex - 1)
+    translateSlide(position)
+}
+
+
 function preventDefault(event){
     event.preventDefault()
 }
@@ -47,11 +64,9 @@ function onMouseMove(event){
 function onMouseUp(event){
     const slide = event.currentTarget
     if(state.movementPosition > 150){
-        const calc = getCenterPosition (state.currentSlideIndex - 1)
-        translateSlide(calc)
+        backwardSlide()
     }else if(state.movementPosition < -150){
-        const calc = getCenterPosition (state.currentSlideIndex + 1)
-        translateSlide(calc)
+        forwardSlide()
     }else{
         const calc = getCenterPosition (state.currentSlideIndex)
         translateSlide(calc)
