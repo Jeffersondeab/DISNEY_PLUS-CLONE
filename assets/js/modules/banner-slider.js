@@ -41,7 +41,16 @@ function backwardSlide(){
 }
  
 
+function animateTransition(active){
+    if(active){
+        slider.style.transition = 'transform .3s'
+    }else{
+        slider.style.removeProperty('transition')
+    }
+}
+
 function setVisibleSlide(index){
+    animateTransition(true)
     const position = getCenterPosition (index)
     translateSlide(position)
 }
@@ -58,6 +67,7 @@ function onMouseDown(event, index){
     state.mouseDownPosition = event.clientX
     state.currentSliderPosition = event.clientX - state.lastTranslatePosition
     state.currentSlideIndex = index
+    animateTransition(false)
     console.log(state.currentSlideIndex)
     console.log('mousedown -', event.clientX)
     slide.addEventListener('mousemove', onMouseMove)  
