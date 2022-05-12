@@ -24,19 +24,28 @@ function getCenterPosition(index){
 
 function forwardSlide(){
     if(state.currentSlideIndex < sliderItems.length - 1){
-        const position = getCenterPosition (state.currentSlideIndex + 1)
-        translateSlide(position)
+        setVisibleSlide (state.currentSlideIndex + 1)
     }else{
-        const position = getCenterPosition (state.currentSlideIndex)
-        translateSlide(position)
+        setVisibleSlide(state.currentSlideIndex)
     }
-   
 }
 
 function backwardSlide(){
-    const position = getCenterPosition (state.currentSlideIndex - 1)
+
+    if(state.currentSlideIndex > 0){
+        setVisibleSlide(state.currentSlideIndex - 1)
+        translateSlide(position)
+    }else{
+        setVisibleSlide(state.currentSlideIndex)
+    }
+}
+ 
+
+function setVisibleSlide(index){
+    const position = getCenterPosition (index)
     translateSlide(position)
 }
+
 
 
 function preventDefault(event){
