@@ -13,6 +13,15 @@ function translateSlide(position){
     slider.style.transform = `translatex(${position}px)`
 }
 
+
+function getCenterPosition(index){
+    const slide = sliderItems[index]
+    const margin = (window.innerWidth - slide.offsetWidth) / 2
+    const centerPosition = margin - (slide.offsetWidth * index)
+    return centerPosition
+}
+
+
 function preventDefault(event){
     event.preventDefault()
 }
@@ -38,14 +47,14 @@ function onMouseMove(event){
 function onMouseUp(event){
     const slide = event.currentTarget
     if(state.movementPosition > 150){
-        const calc = slide.offsetWidth * (state.currentSlideIndex - 1)
-        translateSlide(-calc)
+        const calc = getCenterPosition (state.currentSlideIndex - 1)
+        translateSlide(calc)
     }else if(state.movementPosition < -150){
-        const calc = slide.offsetWidth * (state.currentSlideIndex + 1)
-        translateSlide(-calc)
+        const calc = getCenterPosition (state.currentSlideIndex + 1)
+        translateSlide(calc)
     }else{
-        const calc = slide.offsetWidth * (state.currentSlideIndex)
-        translateSlide(-calc)
+        const calc = getCenterPosition (state.currentSlideIndex)
+        translateSlide(calc)
     }
     slide.removeEventListener('mousemove', onMouseMove)
 }
