@@ -1,5 +1,9 @@
 const sliderItems = document.querySelectorAll('[data-banner="item"]')
 const slider = document.querySelector('[data-banner="slider"]')
+const btnNext = document.querySelector('[data-banner="btn-next"]')
+const btnPrevious = document.querySelector('[data-banner="btn-previous]')
+
+
 const state = {
     mouseDownPosition: 0,
     lastTranslatePosition:0,
@@ -68,16 +72,12 @@ function onMouseDown(event, index){
     state.currentSliderPosition = event.clientX - state.lastTranslatePosition
     state.currentSlideIndex = index
     animateTransition(false)
-    console.log(state.currentSlideIndex)
-    console.log('mousedown -', event.clientX)
     slide.addEventListener('mousemove', onMouseMove)  
 }
 
 function onMouseMove(event){
     state.movementPosition = event.clientX - state.mouseDownPosition
-    console.log(state.movementPosition)
     translateSlide(event.clientX - state.currentSliderPosition)
-    //console.log('mousemove -', event.clientX)
 }
 
 function onMouseUp(event){
@@ -114,7 +114,7 @@ function setListeners(){
 
 
 function init() {
-    setVisibleSlide(2)
+    setVisibleSlide(0)
     setListeners()
 }
 
