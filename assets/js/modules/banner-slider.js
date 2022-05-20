@@ -150,6 +150,3 @@ function init() {
 export default{
     init
 }
-
-
-/* 1.28.30 */
