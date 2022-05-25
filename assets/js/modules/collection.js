@@ -8,20 +8,39 @@ const state = {
     mouseDownPosition: 0,
     movement: 0,
     lastTranslatePosition:0,
-    currentSlidePosition:0
+    currentSlidePosition:0,
+    currentItemIndex:0,
+    currentSlideIndex:0
 }
 
 const preventDefault = (event) =>{
     event.preventDefault()
 }
 
+
+
 const translateSlide = (position) => {
     state.lastTranslatePosition = position
     carouselList.style.transform = `translateX(${position}px)`
 }
 
-const onMouseDown = (event) =>{
+const getCenterPosition = (slideIndex) => {
+    const item = carouselItem[state.currentItemIndex]
+    const itemWidth = item.offsetWidth
+    const bodywidth = document.body.clientWidth
+    const slideWidth = itemWidth * 5
+    const margin = (bodywidth - slideWidth) / 2
+    return margin - (slideWidth * slideIndex)
+}
+
+const setVisibleSlide = (slideIndex) => {
+    const centerPosition = getCenterPosition(slideIndex)
+    translateSlide(centerPosition)
+}
+
+const onMouseDown = (event, index) =>{
     const item = event.currentTarget
+    state.currentItemIndex = index
     state.mouseDownPosition = event.clientX
     state.currentSlidePosition = event.clientX - state.lastTranslatePosition
     item.addEventListener('mousemove',onMouseMove)
@@ -52,15 +71,17 @@ const setListeners = () => {
         const link = item.querySelector('.movie-carousel__link')
         link.addEventListener('click', preventDefault)
         item.addEventListener('dragstart', preventDefault)
-        item.addEventListener('mousedown', onMouseDown)
+        item.addEventListener('mousedown', (event) => {
+            onMouseDown(event, index)
+        })
         item.addEventListener('mouseup', onMouseUp)
         item.addEventListener('mouseleave', onMouseLeave)
-        item.addEventListener('mousemove', onMouseMove)
     })
 }
 
 const init = () => {
     setListeners()
+    setVisibleSlide(0)
 }
 
 //arrow function
