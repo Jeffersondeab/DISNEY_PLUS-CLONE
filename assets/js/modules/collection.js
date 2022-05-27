@@ -68,7 +68,7 @@ const forwardSlide = () => {
 
 
 const onMouseDown = (event, itemIndex) =>{
-    const {state} = collectionData[currentCollectionIndex]
+    const { state } = collectionData[currentCollectionIndex]
     const item = event.currentTarget
     state.currentItemIndex = itemIndex
     state.mouseDownPosition = event.clientX
@@ -85,7 +85,7 @@ const onMouseMove = (event) =>{
 }
 
 const onMouseUp = (event) =>{
-    const {state} = collectionData[currentCollectionIndex]
+    const { state } = collectionData[currentCollectionIndex]
     if(state.movement > 150){
         backwardSlide()
     }else if(state.movement < -150){
