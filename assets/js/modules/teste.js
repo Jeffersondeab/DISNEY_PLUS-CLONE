@@ -94,13 +94,8 @@ const onMouseUp = (event) => {
     item.removeEventListener('mousemove',onMouseMove)
 }
 
-const onMouseLeave = (event) => {
-    const item = event.currentTarget
-    item.removeEventListener('mousemove', onMouseMove)
-}
-
 const insertCollectiononData = (collection) => {
-    collectionData.push({
+    collection.push({
         carouselList: collection.querySelector('[data-carousel="list"]'),
         carouselItems: collection.querySelectorAll('[data-carousel="item"]'),
         btnPrevious: collection.querySelector('[data-carousel="btn-previous"]'),
@@ -118,7 +113,7 @@ const insertCollectiononData = (collection) => {
 }
 
 const setListeners = (collectionIndex) => {
-    const{ btnNext, btnPrevious, carouselItems} = collectionData[collectionIndex]
+    const{btnNext, btnPrevious, carouselItems} = collectionData[collectionIndex]
     btnNext.addEventListener('click', () => {
         currentCollectionIndex = collectionIndex
         forwardSlide()
@@ -156,38 +151,3 @@ export default{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
