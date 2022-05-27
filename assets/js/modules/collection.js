@@ -40,7 +40,7 @@ const animateTransition = (active) =>{
 }
 
 const setVisibleSlide = (slideIndex) => {
-    const {state} = collectionData[currentCollectionIndex]
+    const { state } = collectionData[currentCollectionIndex]
     state.currentSlideIndex = slideIndex
     const centerPosition = getCenterPosition(slideIndex)
     animateTransition(true)
@@ -123,7 +123,7 @@ const insertCollectionDate = (collection) => {
 }
 
 const setListeners = (collectionIndex) => {
-    const {btnNext, btnPrevious, carouselItem} = collectionData[collectionIndex]
+    const {btnNext, btnPrevious, carouselItems} = collectionData[collectionIndex]
     btnNext.addEventListener('click', () => {
         currentCollectionIndex = collectionIndex
         forwardSlide()
@@ -133,7 +133,7 @@ const setListeners = (collectionIndex) => {
         currentCollectionIndex = collectionIndex
         backwardSlide()
     })
-    carouselItem.forEach((item, itemIndex) => {
+    carouselItems.forEach((item, itemIndex) => {
         const link = item.querySelector('.movie-carousel__link')
         link.addEventListener('click', preventDefault)
         item.addEventListener('dragstart', preventDefault)
