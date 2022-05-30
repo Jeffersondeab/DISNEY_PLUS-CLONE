@@ -1,6 +1,7 @@
 const collections = document.querySelectorAll('[data-carousel="collection"]')
 const collectionData = []
 let currentCollectionIndex = 0
+let itemsPerSlide = 5
 
 const preventDefault = (event) =>{
     event.preventDefault()
@@ -17,7 +18,7 @@ const getCenterPosition = (slideIndex) =>{
     const item = carouselItems[state.currentItemIndex]
     const itemWidth = item.offsetWidth
     const bodyWidth = document.body.clientWidth
-    const slideWidth = itemWidth * 5
+    const slideWidth = itemWidth * itemsPerSlide
     const margin = (bodyWidth - slideWidth) / 2
     return margin - (slideWidth * slideIndex)
 }
@@ -25,7 +26,7 @@ const getCenterPosition = (slideIndex) =>{
 const getLastSlideIndex = () => {
     const {carouselItems} = collectionData[currentCollectionIndex]
     const lastItemIndex = carouselItems.length - 1
-    return Math.floor(lastItemIndex / 5)
+    return Math.floor(lastItemIndex / itemsPerSlide)
 }
 
 const animateTransition = (active) => {
@@ -99,6 +100,26 @@ const onMouseLeave = (event) => {
     item.removeEventListener('mousemove', onMouseMove)
 }
 
+const onTouchStart = (event, itemIndex) =>{
+    const item = event.currentTarget
+    item.addEventListener('touchmove', onTouchMove)
+    event.clientX = event.touches[0].clientX
+    onMouseDown(event, itemIndex)
+}
+
+const onTouchMove = (event) =>{
+    event.clientX = event.touches[0].clientX
+    onMouseMove(event)
+}
+
+
+const onTouchEnd = (event) =>{
+    const item = event.currentTarget
+    item.removeEventListener('touchmove', onTouchMove)
+    onMouseUp(event)
+}
+
+
 const insertCollectiononData = (collection) => {
     collectionData.push({
         carouselList: collection.querySelector('[data-carousel="list"]'),
@@ -116,6 +137,30 @@ const insertCollectiononData = (collection) => {
         }
     })
 }
+
+
+const setItemsPerSlide = () => {
+    if(document.body.clientWidth < 1024){
+        itemsPerSlide = 2
+        return
+    }
+    itemsPerSlide = 5
+}
+
+const setWindowResizeListener = () => {
+    let resizeTimeOut;
+    window.addEventListener('resize', function(event){
+        clearTimeout(resizeTimeOut)
+        resizeTimeOut = setTimeout(function(){
+            setItemsPerSlide()
+            collections.forEach((_, collectionIndex) => {
+                currentCollectionIndex = collectionIndex
+                setVisibleSlide(0)
+            }) 
+        }, 1000)
+    })
+}
+
 
 const setListeners = (collectionIndex) => {
     const{ btnNext, btnPrevious, carouselItems} = collectionData[collectionIndex]
@@ -138,16 +183,23 @@ const setListeners = (collectionIndex) => {
         })
         item.addEventListener('mouseup', onMouseUp)
         item.addEventListener('mouseleave', onMouseLeave)
+        item.addEventListener('touchstart', function(event){
+            currentCollectionIndex = collectionIndex
+            onTouchStart(event, itemIndex)
+        })
+        item.addEventListener('touchend', onTouchEnd)
     })
 }
 
 const init = () => {
+    setItemsPerSlide()
+    setWindowResizeListener()
     collections.forEach((collection, collectionIndex) =>{
+        currentCollectionIndex = collectionIndex
         insertCollectiononData(collection)
         setListeners(collectionIndex)
+        setVisibleSlide(0)
     })
-    setListeners()
-    setVisibleSlide(0)
 }
 
 export default{
@@ -182,6 +234,28 @@ export default{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
