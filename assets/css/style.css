@@ -5,6 +5,7 @@
 @import url('layout/header.css');
 @import url('layout/nav-menu.css');
 @import url('./layout/user-menu.css');
+@import url('./layout/footer.css');
 @import url('./componentes/logo.css');
 @import url('./componentes/user-profile.css');
 @import url('./componentes/arrow-slider.css ');
