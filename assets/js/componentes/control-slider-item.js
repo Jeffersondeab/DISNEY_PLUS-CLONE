@@ -3,3 +3,5 @@ const ControlSliderItem = () =>{
     <button class="controls-slider__item" data-banner="btn-control"><i class="fa-solid fa-circle"></i></button> 
     `
 } 
+
+export default ControlSliderItem

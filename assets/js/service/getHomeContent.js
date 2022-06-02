@@ -1,9 +1,9 @@
 export const getHomeContent = () =>{
  
 return new Promise((resolve, reject) => {
-        fetch('/content/data.js')
+        fetch('/content/data.json')
         .then((response) => {
-            return  response.json()
+            return response.json()
         })
         .then((result) => {
            resolve(result.data)
