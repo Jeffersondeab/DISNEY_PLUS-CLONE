@@ -95,7 +95,6 @@ function backwardSlide(){
 
     if(state.currentSlideIndex > 0){
         setVisibleSlide(state.currentSlideIndex - 1)
-        translateSlide(position)
     }else{
         setVisibleSlide(state.currentSlideIndex)
     }
