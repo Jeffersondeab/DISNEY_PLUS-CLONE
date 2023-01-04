@@ -53,13 +53,13 @@
             {
                 "id": "c0922879-f838-4db7-9a06-def666850718",
                 "title": "Disney",
-                "image": "./content/media/categories/disney.png",
+                "image": "/content/media/categories/disney.png",
                 "slug": "disney"
             },
             {
                 "id": "7a11d2cc-0ea2-4fb9-bee9-bfcb9e7104bb",
                 "title": "Pixar",
-                "image": "./content/media/categories/pixar.png",
+                "image": "/content/media/categories/pixar.png",
                 "slug": "pixar"
             },
             {
@@ -100,28 +100,28 @@
             {
                 "id": "288186a0-278c-496e-8b02-8e71a96429c3",
                 "title": "102 Dalmatas",
-                "imageCover": "/content/media/movies/102-dalmatas.jpeg",
+                "imageCover": "./content/media/movies/102-dalmatas.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "102-dalmatas"
             },
             {
                 "id": "11f6e9cb-c868-489e-9247-677a77d03ea4",
                 "title": "A Bela e a Fera",
-                "imageCover": "/content/media/movies/a-bela-e-a-fera.jpeg",
+                "imageCover": "./content/media/movies/a-bela-e-a-fera.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "a-bela-e-a-fera"
             },
             {
                 "id": "36f1ac0c-d354-4867-b9d3-5932fec60684",
                 "title": "A Dama e o Vagabundo",
-                "imageCover": "/content/media/movies/a-dama-e-o-vagabundo.jpeg",
+                "imageCover": "./content/media/movies/a-dama-e-o-vagabundo.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": ""
             },
             {
                 "id": "50bda64a-11f4-41f4-b93d-b73fa9dd9682",
                 "title": "A Montanha-Russa Enfeitiçada",
-                "imageCover": "/content/media/movies/a-montanha-enfeiticada.jpeg",
+                "imageCover": "./content/media/movies/a-montanha-enfeiticada.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "a-montanha-enfeiticada"
             },
