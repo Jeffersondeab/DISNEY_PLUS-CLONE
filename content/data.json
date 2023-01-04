@@ -11,15 +11,15 @@
             {
                 "id": "74d17ffa-34cd-49f6-a165-5db22fd3c150",
                 "title": "Dr. Estranho",
-                "imageCover": "../content/media/banners/dr-estranho.jpeg",
-                "imageTitle": "../content/media/banners/dr-estranho-titulo.png",
+                "imageCover": "/content/media/banners/dr-estranho.jpeg",
+                "imageTitle": "/content/media/banners/dr-estranho-titulo.png",
                 "slug": "dr-estranho"
             },
             {
                 "id": "32c36389-f34f-41e5-8437-2d76251dd67f",
                 "title": "Encanto",
-                "imageCover": "../content/media/banners/encanto.jpeg",
-                "imageTitle": "../content/media/banners/encanto-titulo.png",
+                "imageCover": "/content/media/banners/encanto.jpeg",
+                "imageTitle": "/content/media/banners/encanto-titulo.png",
                 "slug": "encanto"
             },
             {
