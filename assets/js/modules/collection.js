@@ -124,7 +124,7 @@ const collectionModule = () => {
 
     const onTouchStart = (event, itemIndex) =>{
         const item = event.currentTarget
-        item.addEventListener('touchmove', onTouchMove)
+         
         event.clientX = event.touches[0].clientX
         onMouseDown(event, itemIndex)
     }
