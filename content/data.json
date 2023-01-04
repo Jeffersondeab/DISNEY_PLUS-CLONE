@@ -53,7 +53,7 @@
             {
                 "id": "c0922879-f838-4db7-9a06-def666850718",
                 "title": "Disney",
-                "image": "./content/media/categories/disney.png",
+                "image": "/content/media/categories/disney.png",
                 "slug": "disney"
             },
             {
