@@ -100,112 +100,112 @@
             {
                 "id": "288186a0-278c-496e-8b02-8e71a96429c3",
                 "title": "102 Dalmatas",
-                "imageCover": "../content/media/movies/102-dalmatas.jpeg",
+                "imageCover": "/content/media/movies/102-dalmatas.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "102-dalmatas"
             },
             {
                 "id": "11f6e9cb-c868-489e-9247-677a77d03ea4",
                 "title": "A Bela e a Fera",
-                "imageCover": "../content/media/movies/a-bela-e-a-fera.jpeg",
+                "imageCover": "/content/media/movies/a-bela-e-a-fera.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "a-bela-e-a-fera"
             },
             {
                 "id": "36f1ac0c-d354-4867-b9d3-5932fec60684",
                 "title": "A Dama e o Vagabundo",
-                "imageCover": "../content/media/movies/a-dama-e-o-vagabundo.jpeg",
+                "imageCover": "/content/media/movies/a-dama-e-o-vagabundo.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": ""
             },
             {
                 "id": "50bda64a-11f4-41f4-b93d-b73fa9dd9682",
                 "title": "A Montanha-Russa Enfeitiçada",
-                "imageCover": "../content/media/movies/a-montanha-enfeiticada.jpeg",
+                "imageCover": "/content/media/movies/a-montanha-enfeiticada.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "a-montanha-enfeiticada"
             },
             {
                 "id": "97bfeffa-c160-4ccb-b497-b17bc463b43b",
                 "title": "Aladdin",
-                "imageCover": "../content/media/movies/aladdin.jpeg",
+                "imageCover": "/content/media/movies/aladdin.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "aladdin"
             },
             {
                 "id": "4fd8e37e-97e6-48b4-ab7f-dacb5072ede3",
                 "title": "Alice Através do Espelho",
-                "imageCover": "../content/media/movies/alice-atraves-do-espelho.jpeg",
+                "imageCover": "/content/media/movies/alice-atraves-do-espelho.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "alice-atraves-do-espelho"
             },
             {
                 "id": "62dfc74e-c4eb-4a0a-a595-757ba954bbc6",
                 "title": "Alice no País das Maravilhas",
-                "imageCover": "../content/media/movies/alice-no-pais-das-maravilhas.jpeg",
+                "imageCover": "/content/media/movies/alice-no-pais-das-maravilhas.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "alice-no-pais-das-maravilhas"
             },
             {
                 "id": "8900f0a1-4221-4785-a65e-d7e258fd48d6",
                 "title": "Christopher Robin",
-                "imageCover": "../content/media/movies/christopher-robin.jpeg",
+                "imageCover": "/content/media/movies/christopher-robin.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "christopher-robin"
             },
             {
                 "id": "0406fbb4-11c6-4b09-bb51-2e47826dab20",
                 "title": "Cinderela",
-                "imageCover": "../content/media/movies/cinderela.jpeg",
+                "imageCover": "/content/media/movies/cinderela.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "cinderela"
             },
             {
                 "id": "0061aad7-d85d-402a-982e-b6253e7b4af6",
                 "title": "Cruella",
-                "imageCover": "../content/media/movies/cruella.jpeg",
+                "imageCover": "/content/media/movies/cruella.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c", "43f435a4-5188-4d29-b14c-9211bb3519de"],
                 "slug": "cruella"
             },
             {
                 "id": "cd3c2fc9-7f2f-409f-8994-1b7ad730ec06",
                 "title": "Dumbo",
-                "imageCover": "../content/media/movies/dumbo.jpeg",
+                "imageCover": "/content/media/movies/dumbo.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "dumbo"
             },
             {
                 "id": "f264385d-2e63-4cc6-86b2-fb850f51934e",
                 "title": "Frankenweenie",
-                "imageCover": "../content/media/movies/frankenweenie.jpeg",
+                "imageCover": "/content/media/movies/frankenweenie.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "frankenweenie"
             },
             {
                 "id": "1d69ae84-56b3-43e3-a14f-52779692a698",
                 "title": "Freak Friday",
-                "imageCover": "../content/media/movies/freak-friday.jpeg",
+                "imageCover": "/content/media/movies/freak-friday.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "freak-friday"
             },
             {
                 "id": "bd4f80df-e435-44e6-a2b0-2e87bc8a495e",
                 "title": "Herbie: Meu Fusca Turbinado",
-                "imageCover": "../content/media/movies/herbie-meu-fusca-turbinado.jpeg",
+                "imageCover": "/content/media/movies/herbie-meu-fusca-turbinado.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "herbie-meu-fusca-turbinado"
             },
             {
                 "id": "0d79a6fb-4f72-4511-8096-71cf1bb7ad27",
                 "title": "Malévola",
-                "imageCover": "../content/media/movies/malevola.jpeg",
+                "imageCover": "/content/media/movies/malevola.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c", "43f435a4-5188-4d29-b14c-9211bb3519de"],
                 "slug": "malevola"
             },
             {
                 "id": "91277874-9f5e-4a20-bc18-099d36ddbcbd",
                 "title": "Malévola: A Dona do Mal",
-                "imageCover": "../content/media/movies/malevola-a-dona-do-mal.jpeg",
+                "imageCover": "/content/media/movies/malevola-a-dona-do-mal.jpeg",
                 "categories": ["82a1e857-5ccf-4a6d-88a6-83c36dc6812c"],
                 "slug": "malevola-a-dona-do-mal"
             },
