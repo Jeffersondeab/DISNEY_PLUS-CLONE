@@ -25,22 +25,22 @@
             {
                 "id": "f2ae10ac-262b-4e1a-94d2-c596ec6c1804",
                 "title": "Gavião Arqueiro",
-                "imageCover": "../content/media/banners/gaviao-arqueiro.jpeg",
-                "imageTitle": "../content/media/banners/gaviao-arqueiro-titulo.png",
+                "imageCover": "/content/media/banners/gaviao-arqueiro.jpeg",
+                "imageTitle": "/content/media/banners/gaviao-arqueiro-titulo.png",
                 "slug": "gaviao-arqueiro"
             },
             {
                 "id": "42e6ce81-44e2-4f7a-b052-d567abfd09c6",
                 "title": "Homem-Aranha",
-                "imageCover": "../content/media/banners/homem-aranha.jpeg",
-                "imageTitle": "../content/media/banners/homem-aranha-titulo.png",
+                "imageCover": "/content/media/banners/homem-aranha.jpeg",
+                "imageTitle": "/content/media/banners/homem-aranha-titulo.png",
                 "slug": "homem-aranha"
             },
             {
                 "id": "943dd837-5105-45ab-8c45-e869cff1687f",
                 "title": "The Mandalorian",
-                "imageCover": "../content/media/banners/the-mandalorian.jpeg",
-                "imageTitle": "../content/media/banners/the-mandalorian-titulo.png",
+                "imageCover": "/content/media/banners/the-mandalorian.jpeg",
+                "imageTitle": "/content/media/banners/the-mandalorian-titulo.png",
                 "slug": "the-mandalorian"
             }
         ],
@@ -53,31 +53,31 @@
             {
                 "id": "c0922879-f838-4db7-9a06-def666850718",
                 "title": "Disney",
-                "image": "../content/media/categories/disney.png",
+                "image": "/content/media/categories/disney.png",
                 "slug": "disney"
             },
             {
                 "id": "7a11d2cc-0ea2-4fb9-bee9-bfcb9e7104bb",
                 "title": "Pixar",
-                "image": "../content/media/categories/pixar.png",
+                "image": "/content/media/categories/pixar.png",
                 "slug": "pixar"
             },
             {
                 "id": "99a64432-90bb-4f5a-8452-1ae128504bb2",
                 "title": "Marvel",
-                "image": "../content/media/categories/marvel.png",
+                "image": "/content/media/categories/marvel.png",
                 "slug": "marvel"
             },
             {
                 "id": "1aba57cf-2149-4ce1-866c-ca2a5d7ab868",
                 "title": "Star Wars",
-                "image": "../content/media/categories/star-wars.png",
+                "image": "/content/media/categories/star-wars.png",
                 "slug": "star-wars"
             },
             {
                 "id": "4d5bde1a-6b6d-473a-84be-8bfa364407e5",
                 "title": "National Geographic",
-                "image": "../content/media/categories/national-geographic.png",
+                "image": "/content/media/categories/national-geographic.png",
                 "slug": "national-geographic"
             },
             {
