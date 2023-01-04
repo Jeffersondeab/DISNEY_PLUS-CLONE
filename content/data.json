@@ -4,8 +4,8 @@
             {
                 "id": "f7b52384-9133-4649-a25a-f7011aead174",
                 "title": "Bem Vindos à Terra",
-                "imageCover": "../content/media/banners/bem-vindos-a-terra.jpeg",
-                "imageTitle": "../content/media/banners/bem-vindos-a-terra-titulo.png",
+                "imageCover": "./content/media/banners/bem-vindos-a-terra.jpeg",
+                "imageTitle": "./content/media/banners/bem-vindos-a-terra-titulo.png",
                 "slug": "bem-vindos-a-terra"
             },
             {
