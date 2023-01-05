@@ -5,7 +5,7 @@
 
 <hr>
 
-<img class="experienceImg" src="./imagens/disney+1.png" alt="">
+<img class="experienceImg" src="./assets/imgs/disney+2.png" alt="">
 
 <hr>
 <p>Foram utilizados as seguintes ferramentas:</p>
