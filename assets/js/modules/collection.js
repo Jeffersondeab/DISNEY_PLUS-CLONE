@@ -20,7 +20,7 @@ const collectionModule = () => {
         const itemWidth = item.offsetWidth
         const bodyWidth = document.body.clientWidth
         const slideWidth = itemWidth * itemsPerSlide
-        const margin = (bodyWidth - slideWidth) / 2
+        const margin = (bodyWidth - slideWidth) / 2         
         return margin - (slideWidth * slideIndex)
     }
 
