@@ -7,8 +7,6 @@
 
 <img class="experienceImg" src="./assets/imgs/disney+2.png" alt="">
 
-<a href="index.htm">page</a>
-
 <hr>
 <p>Foram utilizados as seguintes ferramentas:</p>
 <ul>
